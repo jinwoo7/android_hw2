@@ -40,7 +40,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="ACLxZ7q"><a href="//imgur.com/ACLxZ7q"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<img src='http://i.imgur.com/ACLxZ7q.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [GIF Maker-GIF Editor](https://play.google.com/store/apps/details?id=com.kayak.studio.gifmaker&hl=en).
 
