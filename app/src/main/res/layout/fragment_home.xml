@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context="jinwoo.hw_2.MainActivity">
+
+    <Button
+        android:background="@drawable/profile"
+        android:id="@+id/mySteps"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:background="@drawable/trophy"
+        android:id="@+id/myRank"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mySteps"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:background="@drawable/team"
+        android:id="@+id/teamSteps"
+        app:layout_constraintBottom_toTopOf="@+id/teamSteps_bar"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:background="@drawable/world"
+        android:id="@+id/teamRank"
+        app:layout_constraintTop_toTopOf="@+id/teamSteps"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mySteps_bar"
+        android:maxHeight="3dip"
+        android:minHeight="3dip"
+        app:layout_constraintTop_toBottomOf="@+id/mySteps"
+        app:layout_constraintRight_toRightOf="@+id/mySteps"
+        app:layout_constraintLeft_toLeftOf="@+id/mySteps"
+        android:progressTint="@color/color_black" />
+
+    <TextView
+        android:text="@string/filler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myRank_text"
+        app:layout_constraintLeft_toLeftOf="@+id/myRank"
+        app:layout_constraintRight_toRightOf="@+id/myRank"
+        app:layout_constraintTop_toBottomOf="@+id/myRank" />
+
+    <TextView
+        android:text="@string/filler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamRank_text"
+        app:layout_constraintLeft_toLeftOf="@+id/teamRank"
+        app:layout_constraintRight_toRightOf="@+id/teamRank"
+        app:layout_constraintTop_toBottomOf="@+id/teamRank" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamSteps_bar"
+        android:maxHeight="3dip"
+        android:minHeight="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/teamSteps_text"
+        app:layout_constraintLeft_toLeftOf="@+id/teamSteps"
+        app:layout_constraintRight_toRightOf="@+id/teamSteps"
+        android:progressTint="@color/color_black" />
+
+    <TextView
+        android:text="@string/filler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mySteps_text"
+        app:layout_constraintTop_toBottomOf="@+id/mySteps_bar"
+        app:layout_constraintLeft_toLeftOf="@+id/mySteps"
+        app:layout_constraintRight_toRightOf="@+id/mySteps" />
+
+    <TextView
+        android:text="@string/filler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamSteps_text"
+        app:layout_constraintRight_toRightOf="@+id/teamSteps"
+        app:layout_constraintLeft_toLeftOf="@+id/teamSteps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp" />
+
+</android.support.constraint.ConstraintLayout>

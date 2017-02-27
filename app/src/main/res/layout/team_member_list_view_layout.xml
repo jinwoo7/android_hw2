@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/member_text"
+        android:id="@+id/list_member_text"
+        app:layout_constraintLeft_toLeftOf="@+id/list_member_pbar"
+        app:layout_constraintRight_toRightOf="@+id/list_member_pbar"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_member_pbar"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_member_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_num_left"
+        android:id="@+id/list_member_leftNum"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/list_member_rightNum"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_num_right"
+        android:id="@+id/list_member_rightNum"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_member_pbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" />
+
+
+</android.support.constraint.ConstraintLayout>

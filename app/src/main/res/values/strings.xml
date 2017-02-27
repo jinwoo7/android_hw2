@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HW2</string>
+    <string name="filler">filler word</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_Password">Password</string>
+    <string name="text_login">login</string>
+    <string name="text_mySteps">7,952 steps</string>
+    <string name="text_teamSteps">35,952 steps</string>
+    <string name="text_myrank">3/5</string>
+    <string name="text_teamrank">7/15</string>
+
+    <string name="member_text">motos steps</string>
+    <string name="dummy_num_left">805</string>
+    <string name="dummy_num_right">2850</string>
+</resources>
